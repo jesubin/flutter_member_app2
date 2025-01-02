@@ -116,12 +116,12 @@ class _MainActivityState extends State<MainActivity> {
         );
       }
     }
+    // 입력필드 초기화
+    _useridController.clear();
+    _passwdController.clear();
+    _emailController.clear();
+    _nameController.clear();
 
-
-    // showSnackBar : 간단한 메시지 출력
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('회원 가입 기능 구현중...'))
-    );
   }
 
   // 회원조회 처리
